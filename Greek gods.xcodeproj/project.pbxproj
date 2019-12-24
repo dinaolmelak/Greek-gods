@@ -27,6 +27,7 @@
 		C053B505234ACFC900A7F5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C053B507234ACFC900A7F5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C053B50D234ADDFF00A7F5ED /* godsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = godsTableViewController.swift; sourceTree = "<group>"; };
+		C0D042B823B1FA9600C11E7C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C0DC2FD5236FA56B00860A9B /* GreekGod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreekGod.swift; sourceTree = "<group>"; };
 		C0DC2FD7236FA68B00860A9B /* GreekGodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreekGodData.swift; sourceTree = "<group>"; };
 		C0DC2FD9236FB71100860A9B /* GodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodDetailViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		C053B4ED234ACFC300A7F5ED = {
 			isa = PBXGroup;
 			children = (
+				C0D042B823B1FA9600C11E7C /* README.md */,
 				C053B4F8234ACFC300A7F5ED /* Greek gods */,
 				C053B4F7234ACFC300A7F5ED /* Products */,
 			);
