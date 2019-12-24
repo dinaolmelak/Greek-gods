@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jcm-rS-vr2">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Greek Gods-->
+        <scene sceneID="YWJ-Ca-vAK">
+            <objects>
+                <tableViewController id="isE-Tt-xKW" customClass="godsTableViewController" customModule="Greek_gods" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9SB-hy-yqx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="greekGodsTableViewCell" textLabel="rXX-OT-4pz" detailTextLabel="gg6-kI-eKD" rowHeight="113" style="IBUITableViewCellStyleValue1" id="PzF-PB-QzA">
+                                <rect key="frame" x="0.0" y="28" width="375" height="113"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PzF-PB-QzA" id="FPo-C1-sNe">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rXX-OT-4pz">
+                                            <rect key="frame" x="16" y="47" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gg6-kI-eKD">
+                                            <rect key="frame" x="300" y="47" width="59" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="iPh-pF-bF0" kind="show" id="O2j-JR-qWm"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="isE-Tt-xKW" id="uSX-vI-kxX"/>
+                            <outlet property="delegate" destination="isE-Tt-xKW" id="TLS-41-rlh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Greek Gods" id="FrN-VY-nWx"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ls7-aR-ytR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.5999999999999" y="95.802098950524751"/>
+        </scene>
+        <!--God Detail View Controller-->
+        <scene sceneID="08e-G6-bgu">
+            <objects>
+                <viewController id="iPh-pF-bF0" customClass="GodDetailViewController" customModule="Greek_gods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="trT-hU-b7q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PbW-c2-4pb">
+                                <rect key="frame" x="0.0" y="44" width="375" height="389"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PbW-c2-4pb" secondAttribute="height" multiplier="375:389" id="J9q-ex-rwj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7m-kZ-H9d">
+                                <rect key="frame" x="10" y="553.5" width="355" height="76.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8z-J3-ZuA">
+                                <rect key="frame" x="10" y="638" width="355" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PbW-c2-4pb" firstAttribute="top" secondItem="yS0-ds-0ZB" secondAttribute="top" id="7FV-aD-9Mc"/>
+                            <constraint firstItem="O7m-kZ-H9d" firstAttribute="leading" secondItem="yS0-ds-0ZB" secondAttribute="leading" constant="10" id="7jD-21-kIH"/>
+                            <constraint firstItem="PbW-c2-4pb" firstAttribute="leading" secondItem="yS0-ds-0ZB" secondAttribute="leading" id="CPT-cs-9wN"/>
+                            <constraint firstItem="d8z-J3-ZuA" firstAttribute="leading" secondItem="yS0-ds-0ZB" secondAttribute="leading" constant="10" id="OW9-wu-qP5"/>
+                            <constraint firstItem="yS0-ds-0ZB" firstAttribute="trailing" secondItem="O7m-kZ-H9d" secondAttribute="trailing" constant="10" id="Ufa-6n-9gR"/>
+                            <constraint firstItem="yS0-ds-0ZB" firstAttribute="bottom" secondItem="d8z-J3-ZuA" secondAttribute="bottom" constant="8" id="czZ-ee-WtJ"/>
+                            <constraint firstItem="PbW-c2-4pb" firstAttribute="trailing" secondItem="yS0-ds-0ZB" secondAttribute="trailing" id="hhr-hF-Hma"/>
+                            <constraint firstItem="yS0-ds-0ZB" firstAttribute="trailing" secondItem="d8z-J3-ZuA" secondAttribute="trailing" constant="10" id="jvj-qf-TOM"/>
+                            <constraint firstItem="d8z-J3-ZuA" firstAttribute="top" secondItem="O7m-kZ-H9d" secondAttribute="bottom" constant="8" id="xVd-Au-TM5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yS0-ds-0ZB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fu5-F4-5vV"/>
+                    <connections>
+                        <outlet property="godDetailLabel" destination="d8z-J3-ZuA" id="qbA-Ie-oo9"/>
+                        <outlet property="godImageView" destination="PbW-c2-4pb" id="p8l-A9-N7r"/>
+                        <outlet property="godNameLabel" destination="O7m-kZ-H9d" id="oeb-w5-1Xc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wy3-NR-MRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2664.8000000000002" y="95.802098950524751"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hIN-zW-NQ3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jcm-rS-vr2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dvL-MB-ZGq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="isE-Tt-xKW" kind="relationship" relationship="rootViewController" id="wA5-gK-PiU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJw-Bh-DbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018.4" y="95.802098950524751"/>
+        </scene>
+    </scenes>
+</document>
